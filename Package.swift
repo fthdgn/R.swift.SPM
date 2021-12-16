@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "R.Swift.SPM",
+  name: "R.swift.SPM",
   platforms: [
     .iOS(.v9),
     .tvOS(.v9),
@@ -10,15 +10,15 @@ let package = Package(
   ],
   products: [
     .library(
-      name: "R.Swift.SPM",
-      targets: ["R.Swift.SPM"])
+      name: "R.swift.SPM",
+      targets: ["R.swift.SPM"])
   ],
   dependencies: [
-    .package(name: "R.Swift.Library", url: "https://github.com/mac-cain13/R.swift.Library", .upToNextMinor(from: "5.3.0"))
+    .package(name: "R.swift.Library", url: "https://github.com/mac-cain13/R.swift.Library", .upToNextMinor(from: "5.3.0"))
   ],
   targets: [
     .target(
-      name: "R.Swift.SPM",
-      dependencies: ["R.Swift.Library"])
+      name: "R.swift.SPM",
+      dependencies: ["R.swift.Library"])
   ]
 )
