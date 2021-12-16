@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd Binary
+/usr/bin/xcrun --sdk macosx swift run -c release rswift generate $1
