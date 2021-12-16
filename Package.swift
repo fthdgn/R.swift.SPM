@@ -20,5 +20,5 @@ let package = Package(
     .target(
       name: "R.Swift.SPM",
       dependencies: [])
-  ],
+  ]
 )
