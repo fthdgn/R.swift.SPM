@@ -15,5 +15,5 @@ let package = Package(
     .library(
       name: "R.Swift.SPM",
       targets: ["R.Swift.SPM"])
-  ],
+  ]
 )
