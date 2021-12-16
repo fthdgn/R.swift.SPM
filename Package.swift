@@ -8,12 +8,17 @@ let package = Package(
     .tvOS(.v9),
     .watchOS(.v2),
   ],
-   products: [
+  products: [
     .library(
       name: "R.Swift.SPM",
       targets: ["R.Swift.SPM"])
   ],
   dependencies: [
     .package(url: "https://github.com/mac-cain13/R.swift.Library", .upToNextMinor(from: "5.3.0"))
-  ]
+  ],
+  targets: [
+    .target(
+      name: "R.Swift.SPM",
+      dependencies: [])
+  ],
 )
