@@ -14,11 +14,11 @@ let package = Package(
       targets: ["R.Swift.SPM"])
   ],
   dependencies: [
-    .package(url: "https://github.com/mac-cain13/R.swift.Library", .upToNextMinor(from: "5.3.0"))
+    .package(name: "R.Swift.Library", url: "https://github.com/mac-cain13/R.swift.Library", .upToNextMinor(from: "5.3.0"))
   ],
   targets: [
     .target(
       name: "R.Swift.SPM",
-      dependencies: [])
+      dependencies: ["R.Swift.Library"])
   ]
 )
